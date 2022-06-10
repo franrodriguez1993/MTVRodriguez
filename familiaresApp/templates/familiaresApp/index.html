@@ -13,7 +13,7 @@
     <style>
         .lista{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(5,1fr);
             list-style: none;
             border:2px solid lightblue;
         }
@@ -28,11 +28,13 @@
         <ul class="lista">
             <li><b>Nombre</b></li>
             <li><b>Apellido</b></li>
+            <li><b>nacimiento</b></li>
             <li><b>Edad</b></li>
             <li><b>Email</b></li>
             {%for i in familiares%}
             <li>{{i.nombre}}</li>
             <li>{{i.apellido}}</li>
+            <li>{{i.nacimiento}}</li>
             <li>{{i.edad}} años</li>
             <li>{{i.email}}</li>
             {%endfor%}
