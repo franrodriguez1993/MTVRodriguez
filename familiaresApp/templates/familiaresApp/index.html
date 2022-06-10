@@ -9,11 +9,34 @@
 <body>
     <h1 style="text-Align: center;color:rgb(202, 60, 24)">Familiares App</h1>
 
-    <div>
-        {%for n in lista%}
-        <p>Mi número de la suerte es: {{n}}</p>
-        <br>
-        {%endfor%}
+    
+    <style>
+        .lista{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            list-style: none;
+            border:2px solid lightblue;
+        }
+
+        .lista li{
+            padding: 5px;
+        }
+    </style>
+
+    
+    <div class="container">
+        <ul class="lista">
+            <li><b>Nombre</b></li>
+            <li><b>Apellido</b></li>
+            <li><b>Edad</b></li>
+            <li><b>Email</b></li>
+            {%for i in familiares%}
+            <li>{{i.nombre}}</li>
+            <li>{{i.apellido}}</li>
+            <li>{{i.edad}} años</li>
+            <li>{{i.email}}</li>
+            {%endfor%}
+        </ul>
 
 
     </div>
