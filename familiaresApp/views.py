@@ -1,8 +1,4 @@
-from contextvars import Context
-from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
-from django.template import Template,context
-
 from familiaresApp.models import Familiares
 # Create your views here.
 

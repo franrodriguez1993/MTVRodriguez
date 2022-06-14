@@ -49,13 +49,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+ 
 ROOT_URLCONF = 'MTVRodriguez.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'/home/franco/Documentos/Programacion/MTVRodriguez/MTVRodriguez/familiaresApp/templates/familiaresApp'],
+        'DIRS': [os.path.join(BASE_DIR,r'/home/franco/Documentos/Programacion/MTVRodriguez/MTVRodriguez/familiaresApp/templates/familiaresApp')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
